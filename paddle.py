@@ -6,11 +6,11 @@ class Paddle(Turtle):
     def __init__(self, start_x):
         super(Paddle, self).__init__()
 
-        self.y_cords = [0, 20, 40]
+        self.y_cords = [0, 20, 40, 60, 80]
         self.turtles = []
         self.start_x = start_x
 
-        for num in range(0,3):
+        for num in range(0,5):
             segment = Turtle()
             segment.goto(self.start_x, self.y_cords[num])
             segment.color('white')
